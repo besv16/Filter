@@ -6,3 +6,5 @@ This is the Filter project repository.
 
 Beatrice Svensson
 Gabriel Aanesen
+
+2018
