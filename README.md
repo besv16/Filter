@@ -1,3 +1,3 @@
 # Filter
 
-This is the Filter project repository. Oh yeah!
+This is the Filter project repository.
