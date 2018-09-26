@@ -1,12 +1,10 @@
 import React from 'react';
 
-const Menu = () => (
-  <div>
-    <p>ÖVERSIKT</p>
-    <p>EXTRA MATERIAL</p>
-    <p>DISKUSSION</p>
-    <p>RELATERADE ARTIKLAR</p>
+const Menu = ({navState, name}) => (
+  <div onClick={navState}>
+    <p>{name}</p>
   </div>
+
 )
 
 export default Menu;
