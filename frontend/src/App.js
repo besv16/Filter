@@ -6,7 +6,7 @@ import Extra from './components/Extra';
 
 class App extends Component {
   state = {
-    location: '',
+    location: 'oversight',
   }
   navState(e) {
     this.setState({location: e})
