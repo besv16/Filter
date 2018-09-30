@@ -12,13 +12,23 @@ class Landing extends React.Component {
           </div>
           <div className="oversightTextContainer">
             <h1>Palmemordet: Den osannolika mördaren</h1>
-            <p>Efter tolv års efterforskningar om denna gåtfulla person
-            fann journalisten Thomas Pettersson vad andra tidigare gått
-            bet på: Engströms motiv, och att han hade tillgång till samma
-            slags vapen som Palme sköts med.</p>
-            <p>Text: MADELENE POLLNOW</p>
-            <p>Fotografi: FREDRIK TJERNSTRÖM</p>
-            <p>Artikel i: Juni/Juli numret 2018</p>
+            <div className="descriptionContainer">
+              <p>Efter tolv års efterforskningar om denna gåtfulla person
+              fann journalisten Thomas Pettersson vad andra tidigare gått
+              bet på: Engströms motiv, och att han hade tillgång till samma
+              slags vapen som Palme sköts med.</p>
+            </div>
+
+
+
+            <div className="metaContainer">
+              <p className="metaRow">Text: <span className="borderBottomUppercase">Madelene Pollnow</span></p>
+              <p className="metaRow">Fotografi: <span className="borderBottomUppercase">Fredrik Tjernström</span></p>
+              <p className="metaRow">Artikel i: <span className="borderBottomUppercase">Juni/Juli numret 2018</span></p>
+            </div>
+
+
+
             <div className="ctaContainer">
               <div className="readlistenContainer">
                 <div className="ctaButton">BÖRJA LÄS</div>

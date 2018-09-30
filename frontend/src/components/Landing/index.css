@@ -1,21 +1,23 @@
 .landingContainer {
   width: 100%;
-  height: 90vh;
-  background-image: url('../../images/young-palme.jpg');
+  height: 100vh;
+  background-image: url('../../images/OlofPalme.jpg');
+  background-size: cover;
   text-align: left;
 }
 
 .oversightContainer {
-  padding-left: 30px;
-  height: 80vh;
+  padding-left: 4.66%;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  color: #fff;
 }
 
 .goBack {
-  height: 10vh;
+  height: 19vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,17 +25,53 @@
 }
 
 .oversightTextContainer {
-  width: 30%;
-  height: 47vh;
-  color: #fff;
+  width: 32%;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  font-size: 20px;
 }
 
 .oversightTextContainer * {
   width: 100%;
+}
+
+.oversightTextContainer h1 {
+  font-size: 48px;
+  line-height: 60px;
+}
+
+.descriptionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 35vh;
+  line-height: 27px;
+}
+
+.metaContainer {
+  height: 27vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.metaRow {
+  margin-bottom: 7px;
+}
+
+.metaTitle {
+  display: inline;
+}
+
+.borderBottomUppercase {
+  border-bottom: 1px solid #DFAA9A;
+  line-height: 23px;
+  text-transform: uppercase;
+  display: inline;
 }
 
 .readlistenContainer {
@@ -43,10 +81,12 @@
 }
 
 .ctaContainer {
+  font-family: 'AkkuratBold';
+  color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 10vh;
+  height: 26vh;
 }
 
 .ctaButton.bottom {
@@ -58,12 +98,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 4vh;
+  height: 5.7vh;
   border-radius: 5px;
 }
 
 .readlistenContainer div {
   width: 48%;
-  height: 4vh;
-  background-color: pink;
+  height: 5.7vh;
+  background-color: #DFAA9A;
 }
