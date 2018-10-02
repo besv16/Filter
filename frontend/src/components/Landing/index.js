@@ -5,7 +5,6 @@ import './index.css';
 class Landing extends React.Component {
   navState(e) {
     this.setState({location: e})
-    console.log(this.state.location);
   }
   render () {
     return (
@@ -22,17 +21,11 @@ class Landing extends React.Component {
               bet på: Engströms motiv, och att han hade tillgång till samma
               slags vapen som Palme sköts med.</p>
             </div>
-
-
-
             <div className="metaContainer">
               <p className="metaRow">Text: <span className="borderBottomUppercase">Madelene Pollnow</span></p>
               <p className="metaRow">Fotografi: <span className="borderBottomUppercase">Fredrik Tjernström</span></p>
               <p className="metaRow">Artikel i: <span className="borderBottomUppercase">Juni/Juli numret 2018</span></p>
             </div>
-
-
-
             <div className="ctaContainer">
               <div className="readlistenContainer">
                 <div className="ctaButton">BÖRJA LÄS</div>

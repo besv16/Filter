@@ -1,6 +1,6 @@
 .Extra {
-  background-image: url('../../images/young-palme.jpg');
+  background-color: hotpink;
   width: 100%;
-  height: 200px;
+  height: 100vh;
   transition: 1s ease-in;
 }
