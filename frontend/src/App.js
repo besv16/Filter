@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import Menu from './components/Menu';
 import Landing from './components/Landing';
+import Menu from './components/Menu';
 import Extra from './components/Extra';
 
 class App extends Component {
@@ -15,13 +15,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        {this.state.location == 'oversight' && (<Landing/>)}
-        {this.state.location == 'extra' && (<Extra/>)}
-        <div className="menuBar">
+        <Landing/>
+        <div className="menuContainer">
           <Menu name="ÖVERSIKT" navState={(e) => this.navState('oversight')}/>
           <Menu name="EXTRA MATERIAL" navState={(e) => this.navState('extra')}/>
           <Menu name="DISKUSSION" navState={(e) => this.navState('discussion')}/>
           <Menu name="RELATERADE ARTIKLAR" navState={(e) => this.navState('related')}/>
+        </div>
+        <div className="dynamicContent"><a id="scrollSection"></a>
+          {this.state.location == 'oversight' && (<Landing/>)}
+          {this.state.location == 'extra' && (<Extra/>)}
         </div>
       </div>
     );

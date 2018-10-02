@@ -3,6 +3,10 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 class Landing extends React.Component {
+  navState(e) {
+    this.setState({location: e})
+    console.log(this.state.location);
+  }
   render () {
     return (
       <div className="landingContainer">
