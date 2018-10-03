@@ -1,44 +1,55 @@
 import React, { Component } from 'react';
 import './App.css';
-import ReallySmoothScroll from 'really-smooth-scroll';
 import Landing from './components/Landing';
 import Oversight from './components/Oversight';
 import Menu from './components/Menu';
 import Extra from './components/Extra';
 import Discussion from './components/Discussion';
 import Related from './components/Related';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 class App extends Component {
   state = {
-    location: 'oversight',
-  }
-
-  navState(e) {
-    this.setState({location: e})
+    location: 'oversight'
   }
 
   render() {
     return (
       <div className="App">
-        <Landing/>
-        <div className="menuContainer">
-          <Menu name="Översikt" navState={(e) => this.navState('oversight')} />
-          <Menu name="Extra material" navState={(e) => this.navState('extra')} />
-          <Menu name="Diskussion" navState={(e) => this.navState('discussion')} />
-          <Menu name="Relaterade artiklar" navState={(e) => this.navState('related')} />
+        <div className="dynamicContent"><a id="scrollSection1"></a>
+          <Landing/>
         </div>
-        <div className="dynamicContent"><a id="scrollSection"></a>
-          {this.state.location == 'oversight' && (<Oversight/>)}
-          {this.state.location == 'extra' && (<Extra/>)}
-          {this.state.location == 'discussion' && (<Discussion/>)}
-          {this.state.location == 'related' && (<Related/>)}
+        <div className="menuContainer">
+          <div className="menu">
+            <AnchorLink href='#scrollSection1'>
+              <Menu name="Översikt" />
+            </AnchorLink>
+            <AnchorLink href='#scrollSection2'>
+              <Menu name="Extra material" />
+            </AnchorLink>
+            <AnchorLink href='#scrollSection3'>
+              <Menu name="Diskussion" />
+            </AnchorLink>
+            <AnchorLink href='#scrollSection4'>
+              <Menu name="Relaterade artiklar" />
+            </AnchorLink>
+          </div>
+        </div>
+        <div className="dynamicContent"><a id="scrollSection2"></a>
+          <Extra/>
+        </div>
+        <div className="dynamicContent"><a id="scrollSection3"></a>
+          <Discussion/>
+        </div>
+        <div className="dynamicContent"><a id="scrollSection4"></a>
+          <Related/>
         </div>
       </div>
     );
   }
 }
-
-document.querySelector('#scrollSection').scrollIntoView({ behavior: 'smooth' });
 
 export default App;

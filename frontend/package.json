@@ -4,10 +4,12 @@
   "private": true,
   "dependencies": {
     "react": "^16.5.2",
+    "react-anchor-link-smooth-scroll": "^1.0.11",
     "react-dom": "^16.5.2",
     "react-font-face": "^0.2.1",
     "react-scripts": "1.1.5",
-    "really-smooth-scroll": "^2.1.1",
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1",
     "url-loader": "^1.1.1"
   },
   "scripts": {

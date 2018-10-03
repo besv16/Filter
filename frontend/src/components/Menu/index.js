@@ -1,11 +1,9 @@
 import React from 'react';
 import './index.css';
 
-const Menu = ({navState, name}) => (
-  <div className="menuBar" onClick={navState}>
-    <a href="#scrollSection">
-      <p>{name}</p>
-    </a>
+const Menu = ({name}) => (
+  <div className="menuBar">
+    <p>{name}</p>
   </div>
 
 )

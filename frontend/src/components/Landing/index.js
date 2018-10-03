@@ -3,9 +3,6 @@ import PropTypes from 'prop-types';
 import './index.css';
 
 class Landing extends React.Component {
-  navState(e) {
-    this.setState({location: e})
-  }
   render () {
     return (
       <div className="landingContainer">
@@ -31,7 +28,6 @@ class Landing extends React.Component {
                 <div className="ctaButton">BÖRJA LÄS</div>
                 <div className="ctaButton">BÖRJA LYSSNA</div>
               </div>
-              <div className="ctaButton bottom">DELA & GILLA</div>
             </div>
           </div>
         </div>

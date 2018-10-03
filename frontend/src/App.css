@@ -3,6 +3,10 @@
   background-color: #1a1a1a;
 }
 
+.App a {
+  text-decoration: none;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
