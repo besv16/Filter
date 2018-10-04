@@ -1,5 +1,12 @@
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
 .App {
-  text-align: center;
   background-color: #1a1a1a;
 }
 
@@ -25,6 +32,14 @@
 
 .App-intro {
   font-size: large;
+}
+
+.dynamicContent h1, .dynamicContent h2 {
+  padding-left: 4.6%;
+}
+
+.dynamicContent h1, .dynamicContent h2 {
+  color: #fff;
 }
 
 @keyframes App-logo-spin {

@@ -1,0 +1,29 @@
+.sliderContainer {
+  width: 100%;
+}
+
+.slider1 {
+  width: 89%;
+  height: 300px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #fff;
+}
+
+ .slider1 .dataRow:nth-child(1) {
+  background-color: green;
+}
+
+.slider2 {
+  background-color: maroon;
+}
+
+.slider3 {
+  background-color: skyblue;
+}
+
+.slider4 {
+  background-color: green;
+}

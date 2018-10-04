@@ -1,6 +1,9 @@
 .Extra {
-  background-color: hotpink;
   width: 100%;
   height: 100vh;
+  /* background-color: hotpink; */
   transition: 1s ease-in;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

@@ -19,7 +19,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="dynamicContent"><a id="scrollSection1"></a>
+        <div><a id="scrollSection1"></a>
           <Landing/>
         </div>
         <div className="menuContainer">

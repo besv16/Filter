@@ -5,6 +5,8 @@ class Discussion extends React.Component {
   render () {
     return (
       <div className="Discussion">
+      <h1>Vit</h1>
+      <h3>h3</h3>
       </div>
     )
   }
