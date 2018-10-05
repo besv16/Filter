@@ -9,10 +9,11 @@ class Extra extends React.Component {
         <h1>Extra material</h1>
         <div>
           <h2>Artiklar</h2>
+          <SimpleSlider name="Articles" sliderClassName="sliderContainer0" slidesToShow="3" slidesToScroll="1"/>
         </div>
         <div>
           <h2>Infografik</h2>
-          <SimpleSlider/>
+          <SimpleSlider name="Infographic" sliderClassName="sliderContainer1" slidesToShow="1.1" slidesToScroll="1"/>
         </div>
         <div>
           <h2>Omtalat</h2>

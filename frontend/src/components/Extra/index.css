@@ -1,9 +1,13 @@
 .Extra {
   width: 100%;
   height: 100vh;
-  /* background-color: hotpink; */
+  padding-top: 8vh;
   transition: 1s ease-in;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.Extra h1 {
+  height: 13vh;
 }

@@ -4,8 +4,9 @@ import './index.css'
 
 export default class SimpleSlider extends Component {
   render() {
+    console.log(this.props.name + ', ' + this.props.slidesToShow + ', ' + this.props.slidesToScroll);
     const settings = {
-      className: 'sliderContainer',
+      className: this.props.sliderClassName,
       centerMode: true,
       centerPadding: '70px',
       focusOnSelect: true,
@@ -13,35 +14,99 @@ export default class SimpleSlider extends Component {
       dots: false,
       infinite: false,
       speed: 1000,
-      slidesToShow: 1.2,
-      slidesToScroll: 1
+      slidesToShow: this.props.slidesToShow,
+      slidesToScroll: this.props.slidesToScroll
     };
-    return (
-      <div className="noPadding">
-        <Slider {...settings}>
-          <div>
-            <div className="slider1">
-              <h2>Preskriberingstid</h2>
-              <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
-              <p className="dataHeading">Innan 2010</p>
-              <div className="dataRow">
-                <p>25 år</p>
-              </div>
-              <p className="dataHeading">Efter 2010</p>
-              <div className="dataRow">
-                <p>40 år</p>
-              </div>
-              <p className="dataHeading">Palmemordet</p>
-              <div className="dataRow">
-                <p>32 år</p>
-              </div>
+
+
+    if (this.props.name == 'Articles') {
+      console.log("NAMNET ÄR Articles");
+      return (
+        <div className="noPadding">
+          <Slider {...settings}>
+            <div className="slider0">
+              <h2>Test</h2>
+              <div className="dataDescription">
+                <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
+                </div>
             </div>
-          </div>
-          <div>
-            <div className="slider2">2</div>
-          </div>
-        </Slider>
-      </div>
-    );
+            <div className="slider0">
+              <h2>Test</h2>
+              <div className="dataDescription">
+                <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
+                </div>
+            </div>
+            <div className="slider0">
+              <h2>Test</h2>
+              <div className="dataDescription">
+                <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
+                </div>
+            </div>
+          </Slider>
+        </div>
+      );
+    }
+
+    if (this.props.name == 'Infographic') {
+      console.log("NAMNET ÄR INFOGRAPHIC");
+      return (
+        <div className="noPadding">
+          <Slider {...settings}>
+            <div>
+            <div className="slider1">
+            <h2>Preskriberingstid</h2>
+            <div className="dataDescription">
+            <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
+            </div>
+            <div className="dataContainer">
+            <h3 className="dataHeading">Innan 2010</h3>
+            <div className="dataRow1">
+            <p>25 år</p>
+            </div>
+            </div>
+            <div className="dataContainer">
+            <h3 className="dataHeading">Efter 2010</h3>
+            <div className="dataRow2">
+            <p>40 år</p>
+            </div>
+            </div>
+            <div className="dataContainer">
+            <h3 className="dataHeading">Palmemordet</h3>
+            <div className="dataRow3">
+            <p>32 år</p>
+            </div>
+            </div>
+            </div>
+            </div>
+            <div>
+            <div className="slider1">
+            <h2>Preskriberingstid</h2>
+            <div className="dataDescription">
+            <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
+            </div>
+            <div className="dataContainer">
+            <h3 className="dataHeading">Innan 2010</h3>
+            <div className="dataRow1">
+            <p>25 år</p>
+            </div>
+            </div>
+            <div className="dataContainer">
+            <h3 className="dataHeading">Efter 2010</h3>
+            <div className="dataRow2">
+            <p>40 år</p>
+            </div>
+            </div>
+            <div className="dataContainer">
+            <h3 className="dataHeading">Palmemordet</h3>
+            <div className="dataRow3">
+            <p>32 år</p>
+            </div>
+            </div>
+            </div>
+            </div>
+          </Slider>
+        </div>
+      );
+    }
   }
 }

@@ -1,15 +1,75 @@
-.sliderContainer {
+.sliderContainer0 {
+  width: 60%;
+}
+
+.sliderContainer1 {
   width: 100%;
 }
 
-.slider1 {
+.slider0 {
   width: 89%;
   height: 300px;
   padding: 0px 40px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   background-color: #fff;
+  border-radius: 5px;
+}
+
+.slider1 {
+  width: 89%;
+  height: 541px;
+  padding: 0px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.slider1 div {
+  font-size: 24px;
+}
+
+.dataRow1 {
+  width: 682px;
+  height: 48px;
+  background-color: #DFAA9A;
+  color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dataRow2 {
+  width: 1027px;
+  height: 48px;
+  background-color: #FF858F;
+  color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.dataRow3 {
+  width: 851px;
+  height: 48px;
+  background-color: #979797;
+  color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider1 h2 {
+  color: #1a1a1a;
+  padding: 0;
+  padding-top: 38px;
 }
 
  .slider1 .dataRow:nth-child(1) {
@@ -26,4 +86,22 @@
 
 .slider4 {
   background-color: green;
+}
+
+h3.dataHeading {
+  height: 42px;
+}
+
+.dataContainer {
+  height: 109px;
+}
+
+.dataDescription {
+  width: 665px;
+  height: 80px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
