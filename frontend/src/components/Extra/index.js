@@ -17,6 +17,7 @@ class Extra extends React.Component {
         </div>
         <div>
           <h2>Omtalat</h2>
+          <SimpleSlider name="Discussed" sliderClassName="sliderContainer2" slidesToShow="2.2" slidesToScroll="0.5"/>
         </div>
       </div>
     )

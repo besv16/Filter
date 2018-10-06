@@ -4,10 +4,9 @@ import './index.css'
 
 export default class SimpleSlider extends Component {
   render() {
-    console.log(this.props.name + ', ' + this.props.slidesToShow + ', ' + this.props.slidesToScroll);
     const settings = {
       className: this.props.sliderClassName,
-      centerMode: true,
+      centerMode: false,
       centerPadding: '70px',
       focusOnSelect: true,
       arrows: false,
@@ -20,37 +19,39 @@ export default class SimpleSlider extends Component {
 
 
     if (this.props.name == 'Articles') {
-      console.log("NAMNET ÄR Articles");
       return (
-        <div className="noPadding">
+        <div className="containerPadding">
           <Slider {...settings}>
+
             <div className="slider0">
-              <h2>Test</h2>
-              <div className="dataDescription">
-                <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
+              <div className="articlesContainer">
+                <img src="palme-mordplatsen.jpg"></img>
+                <p>Mordplatsen & vittnesmål</p>
+              </div>
+            </div>
+
+            <div className="slider0">
+              <div className="articlesContainer">
+                <img src="thomasPettersson.jpg"></img>
+                <p>Intervju med Thomas Pettersson</p>
                 </div>
             </div>
+
             <div className="slider0">
-              <h2>Test</h2>
-              <div className="dataDescription">
-                <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
-                </div>
+              <div className="articlesContainer">
+                <img src="polisens-misslyckande.jpg"></img>
+                <p>Polisens misslyckande</p>
+              </div>
             </div>
-            <div className="slider0">
-              <h2>Test</h2>
-              <div className="dataDescription">
-                <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
-                </div>
-            </div>
+
           </Slider>
         </div>
       );
     }
 
     if (this.props.name == 'Infographic') {
-      console.log("NAMNET ÄR INFOGRAPHIC");
       return (
-        <div className="noPadding">
+        <div className="containerPadding">
           <Slider {...settings}>
             <div>
             <div className="slider1">
@@ -108,5 +109,62 @@ export default class SimpleSlider extends Component {
         </div>
       );
     }
+
+
+
+    if (this.props.name == 'Discussed') {
+      return (
+        <div className="containerPadding">
+          <Slider {...settings}>
+            <div>
+              <div className="slider2">
+                <div className="discussionContainer">
+                  <img src="SVDBLlogga.svg"></img>
+                  <p>”Mattias Göransson säger att de haft ett unikt
+                  kontaktnät till sitt förfogande och att det är
+                  Filters historiskt största reportage med över
+                  112 000-tecken. På nätet ligger det flera noter
+                  som är kopplade till flera sidor källdokument som
+                  man själv kan gå in att läsa.”</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="slider2">
+                <div className="discussionContainer">
+                  <img src="FILTERlogga.png"></img>
+                  <p>”Mattias Göransson säger att de haft ett unikt
+                  kontaktnät till sitt förfogande och att det är
+                  Filters historiskt största reportage med över
+                  112 000-tecken. På nätet ligger det flera noter
+                  som är kopplade till flera sidor källdokument som
+                  man själv kan gå in att läsa.”</p>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <div className="slider2">
+                <div className="discussionContainer">
+                  <img src="DNlogga.jpg"></img>
+                  <p>”Mattias Göransson säger att de haft ett unikt
+                  kontaktnät till sitt förfogande och att det är
+                  Filters historiskt största reportage med över
+                  112 000-tecken. På nätet ligger det flera noter
+                  som är kopplade till flera sidor källdokument som
+                  man själv kan gå in att läsa.”</p>
+                </div>
+              </div>
+            </div>
+
+
+          </Slider>
+        </div>
+      );
+    }
+
+
+
   }
 }
