@@ -7,6 +7,8 @@ import Discussion from './components/Discussion';
 import Related from './components/Related';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
+import heartimage from './images/heart-image.png';
+
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -47,7 +49,7 @@ class App extends Component {
           <Related/>
         </div>
         <div className="likeShareContainer">
-          <img src="../../images/heartImage.png"></img>
+          <img src={heartimage}></img>
       </div>
       </div>
     );
