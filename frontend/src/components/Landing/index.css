@@ -4,7 +4,7 @@
   background-image: url('../../images/OlofPalme.jpg');
   background-size: cover;
   text-align: left;
-  border: 1px solid green;
+  box-shadow: inset -2px -43px 42px -11px #1a1a1a
 }
 
 .oversightContainer {
@@ -61,8 +61,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 35vh;
+  height: 28vh;
   line-height: 27px;
+}
+
+.descriptionContainer p {
+  font-size: 20px;
+  line-height: 23px;
 }
 
 .metaContainer {
@@ -114,6 +119,7 @@
   align-items: center;
   height: 5.7vh;
   border-radius: 5px;
+  line-height: 23px;
 }
 
 .readlistenContainer div {

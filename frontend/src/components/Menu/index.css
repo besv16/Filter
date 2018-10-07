@@ -20,6 +20,7 @@
   position: fixed;
   color: #fff;
   background-color: #1a1a1a;
+  z-index: 1;
 }
 
 .menuBar p {

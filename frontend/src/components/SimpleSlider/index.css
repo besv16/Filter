@@ -38,10 +38,6 @@
   width: 224px;
 }
 
-.articlesContainer img {
-  /* width: 100px; */
-}
-
 .slider1 {
   width: 89%;
   height: 541px;
@@ -59,42 +55,34 @@
 
 .dataRow1 {
   width: 682px;
-  height: 48px;
   background-color: #DFAA9A;
-  color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .dataRow2 {
   width: 1027px;
-  height: 48px;
   background-color: #FF858F;
-  color: #fff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .dataRow3 {
   width: 851px;
-  height: 48px;
   background-color: #979797;
-  color: #fff;
+}
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.dataRow1, .dataRow2, .dataRow3 {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
 
 .slider1 h2 {
   color: #1a1a1a;
   padding: 0;
   padding-top: 38px;
+  font-size: 36px;
+  line-height: 42px;
 }
 
  .slider1 .dataRow:nth-child(1) {
@@ -123,15 +111,16 @@
   align-items: center;
 }
 
+.discussionContainer img {
+  width: 150px;
+  height: 65px;
+}
+
 .discussionContainer p {
   text-align: center;
   width: 508px;
   height: 108px;
-}
-
-.discussionContainer img {
-  width: 130px;
-  height: 60px;
+  line-height: 23px;
 }
 
 .slider4 {
@@ -140,10 +129,16 @@
 
 h3.dataHeading {
   height: 42px;
+  line-height: 28px;
 }
 
 .dataContainer {
   height: 109px;
+}
+
+.dataContainer p {
+  font-size: 24px;
+  line-height: 28px;
 }
 
 .dataDescription {
