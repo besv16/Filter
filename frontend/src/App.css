@@ -46,6 +46,21 @@ h3 {
   color: #fff;
 }
 
+.likeShareContainer {
+  width: 100%;
+  height: 464px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid red;
+}
+
+.likeShareContainer img {
+  height: 418px;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

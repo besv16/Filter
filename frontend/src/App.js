@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Landing from './components/Landing';
-import Oversight from './components/Oversight';
 import Menu from './components/Menu';
 import Extra from './components/Extra';
 import Discussion from './components/Discussion';
@@ -47,6 +46,9 @@ class App extends Component {
         <div className="dynamicContent"><a id="scrollSection4"></a>
           <Related/>
         </div>
+        <div className="likeShareContainer">
+          <img src="../../images/heartImage.png"></img>
+      </div>
       </div>
     );
   }

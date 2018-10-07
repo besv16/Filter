@@ -1,5 +1,13 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import palmemordplatsen from '../../images/palme-mordplatsen.jpg';
+import thomaspettersson from '../../images/thomas-pettersson.jpg';
+import polisensmisslyckande from '../../images/polisens-miss.png';
+
+import svdbl from '../../images/svdbl-logga.svg';
+import filter from '../../images/filter-logga.png';
+import dn from '../../images/dn-logga.jpg';
+
 import './index.css'
 
 export default class SimpleSlider extends Component {
@@ -25,21 +33,21 @@ export default class SimpleSlider extends Component {
 
             <div className="slider0">
               <div className="articlesContainer">
-                <img src="palme-mordplatsen.jpg"></img>
+                <img src={palmemordplatsen}></img>
                 <p>Mordplatsen & vittnesmål</p>
               </div>
             </div>
 
             <div className="slider0">
               <div className="articlesContainer">
-                <img src="thomasPettersson.jpg"></img>
+                <img src={thomaspettersson}></img>
                 <p>Intervju med Thomas Pettersson</p>
                 </div>
             </div>
 
             <div className="slider0">
               <div className="articlesContainer">
-                <img src="polisens-misslyckande.jpg"></img>
+                <img src={polisensmisslyckande}></img>
                 <p>Polisens misslyckande</p>
               </div>
             </div>
@@ -119,7 +127,7 @@ export default class SimpleSlider extends Component {
             <div>
               <div className="slider2">
                 <div className="discussionContainer">
-                  <img src="SVDBLlogga.svg"></img>
+                  <img src={svdbl}></img>
                   <p>”Mattias Göransson säger att de haft ett unikt
                   kontaktnät till sitt förfogande och att det är
                   Filters historiskt största reportage med över
@@ -133,7 +141,7 @@ export default class SimpleSlider extends Component {
             <div>
               <div className="slider2">
                 <div className="discussionContainer">
-                  <img src="FILTERlogga.png"></img>
+                  <img src={filter}></img>
                   <p>”Mattias Göransson säger att de haft ett unikt
                   kontaktnät till sitt förfogande och att det är
                   Filters historiskt största reportage med över
@@ -147,7 +155,7 @@ export default class SimpleSlider extends Component {
             <div>
               <div className="slider2">
                 <div className="discussionContainer">
-                  <img src="DNlogga.jpg"></img>
+                  <img src={dn}></img>
                   <p>”Mattias Göransson säger att de haft ett unikt
                   kontaktnät till sitt förfogande och att det är
                   Filters historiskt största reportage med över
@@ -163,6 +171,39 @@ export default class SimpleSlider extends Component {
         </div>
       );
     }
+
+
+    if (this.props.name == 'Related') {
+      return (
+        <div className="containerPadding">
+          <Slider {...settings}>
+
+            <div className="slider0">
+              <div className="articlesContainer">
+                <img src={palmemordplatsen}></img>
+                <p>Mordplatsen & vittnesmål</p>
+              </div>
+            </div>
+
+            <div className="slider0">
+              <div className="articlesContainer">
+                <img src={thomaspettersson}></img>
+                <p>Intervju med Thomas Pettersson</p>
+                </div>
+            </div>
+
+            <div className="slider0">
+              <div className="articlesContainer">
+                <img src={polisensmisslyckande}></img>
+                <p>Polisens misslyckande</p>
+              </div>
+            </div>
+
+          </Slider>
+        </div>
+      );
+    }
+
 
 
 

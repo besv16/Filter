@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import leftarrow from '../../images/left-arrow.svg';
 import './index.css';
 
 class Landing extends React.Component {
@@ -8,7 +9,7 @@ class Landing extends React.Component {
       <div className="landingContainer">
         <div className="oversightContainer">
           <div className="goBack">
-            <a>GÅ TILLBAKA</a>
+            <a><img src={leftarrow}></img>GÅ TILLBAKA</a>
           </div>
           <div className="oversightTextContainer">
             <h1>Palmemordet: Den osannolika mördaren</h1>

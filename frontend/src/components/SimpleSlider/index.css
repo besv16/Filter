@@ -1,4 +1,4 @@
-.sliderContainer0 {
+.sliderContainer0, .sliderContainer3 {
   width: 69%;
 }
 
@@ -6,11 +6,7 @@
   width: 150px;
 }
 
-.sliderContainer1 {
-  width: 100%;
-}
-
-.sliderContainer2 {
+.sliderContainer1, .sliderContainer2  {
   width: 100%;
 }
 
