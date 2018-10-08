@@ -26,7 +26,8 @@
 }
 
 .goBack a {
-  height: 22px;
+  font-family: 'Akkurat Bold';
+  height: 27px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -35,13 +36,13 @@
 
 .goBack img {
   width: 31px;
-  height: 22px;
+  height: 27px;
   padding-right: 12px;
 }
 
 .oversightTextContainer {
-  width: 32%;
-  height: 65vh;
+  width: 34%;
+  height: 69vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -54,10 +55,12 @@
 }
 
 .oversightTextContainer h1 {
+  font-family: 'Harriet Display';
   line-height: 60px;
 }
 
 .descriptionContainer {
+  width: 95%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -67,7 +70,7 @@
 
 .descriptionContainer p {
   font-size: 20px;
-  line-height: 23px;
+  line-height: 25px;
 }
 
 .metaContainer {
@@ -76,6 +79,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.descriptionContainer p, .metaContainer p {
+  font-family: 'Harriet Text';
 }
 
 .metaRow {
@@ -94,6 +101,7 @@
 }
 
 .readlistenContainer {
+  font-family: 'Akkurat Bold';
   display: flex;
   flex-direction: row;
   justify-content: space-between;

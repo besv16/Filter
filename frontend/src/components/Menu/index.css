@@ -18,6 +18,7 @@
   flex-direction: row;
   justify-content: center;
   position: fixed;
+  font-family: 'Akkurat Bold';
   color: #fff;
   background-color: #1a1a1a;
   z-index: 1;

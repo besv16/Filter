@@ -34,7 +34,7 @@ export default class SimpleSlider extends Component {
             <div className="slider0">
               <div className="articlesContainer">
                 <img src={palmemordplatsen}></img>
-                <p>Mordplatsen & vittnesmål</p>
+                <p>Mordplatsen & Vittnesmål</p>
               </div>
             </div>
 

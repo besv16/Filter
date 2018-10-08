@@ -12,7 +12,14 @@
   height: 13vh;
 }
 
-.dataDescription p {
-  font-size: 20px;
-  line-height: 23px;
+.dynamicContent h1, .dynamicContent h2 {
+  font-family: 'Harriet Display';
+  padding-left: 4.6%;
+  color: #fff;
+}
+
+.dynamicContent h2 {
+  font-family: 'Akkurat Pro Regular';
+  font-size: 36px;
+  line-height: 60px;
 }

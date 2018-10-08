@@ -32,7 +32,7 @@ class Discussion extends React.Component {
                 <h3>Varför tog det så lång tid att skriva artikeln?</h3>
 
                 <div className="QuestionMetaRow">
-                  <p>Insänt av: Kalle Holmqvist, Karlskrona</p>
+                  <p>Insänt av: <span>Kalle Holmqvist, Karlskrona</span></p>
                   <p>Publicerad den 2 okt 2018</p>
                 </div>
 
@@ -47,12 +47,12 @@ class Discussion extends React.Component {
             återvänder nån gång.</p>
 
             <div className="answerContainer">
-              <p>Svar</p>
+              <p><span>Svar</span></p>
 
               <p>Samma för oss som arbetar med siten. Vi driver
               på här, tro mig. Tack för ditt tålamid.</p>
 
-              <p>Thomas Pettersson</p>
+              <p><span>Thomas Pettersson</span></p>
             </div>
 
             </div>

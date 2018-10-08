@@ -1,3 +1,28 @@
+@font-face {
+  font-family: 'Akkurat Pro Regular';
+  src: url('/fonts/AkkuratPro-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Akkurat Bold';
+  src: url('/fonts/akkurat-bold.ttf');
+}
+
+@font-face {
+  font-family: 'Akkurat Pro';
+  src: url('/fonts/AkkuratPro-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Harriet Display';
+  src: url('/fonts/harriet_display_bold-webfont.ttf');
+}
+
+@font-face {
+  font-family: 'Harriet Text';
+  src: url('/fonts/harriet_text_regular-webfont.ttf');
+}
+
 h1 {
   font-size: 48px;
   line-height: 60px;
@@ -37,16 +62,6 @@ h3 {
 
 .App-intro {
   font-size: large;
-}
-
-.dynamicContent h1, .dynamicContent h2 {
-  padding-left: 4.6%;
-  color: #fff;
-}
-
-.dynamicContent h2 {
-  font-size: 36px;
-  line-height: 60px;
 }
 
 .likeShareContainer {
