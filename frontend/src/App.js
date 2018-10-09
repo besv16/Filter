@@ -7,14 +7,39 @@ import Discussion from './components/Discussion';
 import Related from './components/Related';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
-import heartimage from './images/heart-image.png';
+import heartimageunliked from './images/heart-image-unliked.png';
+import heartimageliked from './images/heart-image-liked.png';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 class App extends Component {
+
   state = {
-    location: 'oversight'
+    location: 'oversight',
+    like: false,
+    percentage: 0
+  }
+
+  componentDidMount() {
+    document.addEventListener('scroll', this.handleScroll);
+  };
+
+  componentWillUnmount() {
+     document.removeEventListener('scroll', this.handleScroll);
+   };
+
+  handleScroll() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.querySelector(".indicator").style.width = scrolled + "%";
+  }
+
+  likeF(e) {
+    this.setState({
+      like: e
+    })
   }
 
   render() {
@@ -38,6 +63,9 @@ class App extends Component {
               <Menu name="Relaterade artiklar" />
             </AnchorLink>
           </div>
+          <div className="indicatorContainer">
+          <div className="indicator"></div>
+          </div>
         </div>
         <div className="dynamicContent"><a id="scrollSection2"></a>
           <Extra/>
@@ -49,8 +77,15 @@ class App extends Component {
           <Related/>
         </div>
         <div className="likeShareContainer">
-          <img src={heartimage}></img>
-      </div>
+          <div className="likeShare">
+            <p className="bold">Gillade du läsningen?</p>
+            <p className="light">Rösta upp reportaget med ett tryck på hjärtat!</p>
+            {!this.state.like && (<img src={heartimageunliked} onClick={(e) => this.likeF(true)}></img>)}
+            {this.state.like && (<img src={heartimageliked} onClick={(e) => this.likeF(false)}></img>)}
+            <p className="bold">Sprid ordet!</p>
+            <p className="light">Hjälp fler att upptäcka det här reportaget.</p>
+          </div>
+        </div>
       </div>
     );
   }

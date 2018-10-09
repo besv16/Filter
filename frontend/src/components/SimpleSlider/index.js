@@ -76,7 +76,7 @@ export default class SimpleSlider extends Component {
             <div className="dataContainer">
             <h3 className="dataHeading">Efter 2010</h3>
             <div className="dataRow2">
-            <p>40 år</p>
+            <p>+40 år</p>
             </div>
             </div>
             <div className="dataContainer">

@@ -1,7 +1,12 @@
 .Discussion {
   width: 80%;
   color: #fff;
+  padding-left: 0.9%;
   /* border: 1px solid green; */
+}
+
+.Discussion .containerPadding {
+  margin-top: 30px;
 }
 
 .containerPadding h3 {
@@ -18,6 +23,7 @@
   border-radius: 5px;
   color: #383838;
   background-color: #fff;
+  margin-top: 20px;
 }
 
 .inboxContainer {
@@ -128,4 +134,9 @@
 
 .dataContainer h3 {
   font-size: 24px;
+}
+
+.twitterContainer {
+  margin-top: 25px;
+  margin-bottom: 45px;  
 }

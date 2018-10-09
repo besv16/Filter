@@ -23,6 +23,10 @@
   src: url('/fonts/harriet_text_regular-webfont.ttf');
 }
 
+* {
+  -webkit-font-smoothing: antialiased;
+}
+
 h1 {
   font-size: 48px;
   line-height: 60px;
@@ -44,11 +48,6 @@ h3 {
   text-decoration: none;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
 .App-header {
   background-color: #222;
   height: 150px;
@@ -66,19 +65,31 @@ h3 {
 
 .likeShareContainer {
   width: 100%;
-  height: 464px;
+  /* height: 464px; ANVÄND NÄR VI FÅTT IN HJÄRT-BILDEN */
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #fcfcf9;
-  /* border: 1px solid red; */
 }
 
 .likeShareContainer img {
   height: 418px;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.likeShare {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p.bold {
+  font-family: 'Akkurat Bold';
+  font-size: 15px;
+}
+
+p.light {
+  font-family: 'Akkurat Pro Regular';
+  font-size: 14px;
 }

@@ -1,22 +1,38 @@
 .menu {
   position: fixed;
   margin: 0 auto !important;
-  width: 40%;
+  width: 35%;
   height: 8vh;
   color: #fff;
   background-color: #1a1a1a;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+}
+
+.indicatorContainer {
+  width: 35%;
+  height: 6vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.indicator {
+  width: 0px;
+  height: 3px;
+  background-color: #DFAA9A;
+  z-index: 2;
 }
 
 .menuContainer {
   width: 100%;
   height: 8vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   position: fixed;
   font-family: 'Akkurat Bold';
   color: #fff;

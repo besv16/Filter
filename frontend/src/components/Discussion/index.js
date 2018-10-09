@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './index.css'
+import './index.css';
+import Quiz from '../Quiz';
 class Discussion extends React.Component {
   render () {
     return (
@@ -62,9 +63,11 @@ class Discussion extends React.Component {
 
         </div>
 
+        <Quiz />
+
 
         <h3>Diskussion på sociala medier</h3>
-        <div>
+        <div className="twitterContainer">
           <a className="twitter-timeline" data-width="613" data-height="550" data-theme="dark" data-link-color="#F5F8FA" href="https://twitter.com/magasinetfilter?ref_src=twsrc%5Etfw">Tweets by magasinetfilter</a>
         </div>
       </div>

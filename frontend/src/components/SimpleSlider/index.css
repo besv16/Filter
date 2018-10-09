@@ -1,3 +1,7 @@
+.slick-slide div div {
+  outline: none;
+}
+
 .sliderContainer0, .sliderContainer3 {
   width: 69%;
 }
@@ -12,7 +16,7 @@
 
 .slider0 {
   width: 300px !important;
-  height: 210px;
+  height: 275px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -49,8 +53,12 @@
   justify-content: flex-start;
   background-color: #fff;
   border-radius: 5px;
+  margin-bottom: 38px;
 }
 
+.slider1 h2 {
+  margin-bottom: 0 !important;
+}
 .slider1 div {
   font-size: 24px;
 }
@@ -110,12 +118,13 @@
   height: 336px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 38px;
 }
 
 .discussionContainer img {
-  width: 150px;
+  width: 130px;
   height: 65px;
 }
 
@@ -123,8 +132,11 @@
   font-family: 'Akkurat Pro';
   text-align: center;
   width: 508px;
-  height: 108px;
+  height: 121px;
   line-height: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .slider4 {
@@ -149,12 +161,12 @@ h3.dataHeading {
 
 .dataDescription {
   width: 665px;
-  height: 80px;
-  color: black;
+  height: 70px;
+  color: #000;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .dataDescription p {
