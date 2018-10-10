@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import leftarrow from '../../images/left-arrow.svg';
 import './index.css';
 
-class Landing extends React.Component {
+class Landing extends Component {
   render () {
     return (
       <div className="landingContainer">
         <div className="oversightContainer">
           <div className="goBack">
-            <a><img src={leftarrow}></img>GÅ TILLBAKA</a>
+            <a><img src={leftarrow} alt="Go back"></img>GÅ TILLBAKA</a>
           </div>
           <div className="oversightTextContainer">
             <h1>Palmemordet: Den osannolika mördaren</h1>
@@ -26,7 +25,7 @@ class Landing extends React.Component {
             </div>
             <div className="ctaContainer">
               <div className="readlistenContainer">
-                <div className="ctaButton">BÖRJA LÄS</div>
+                <div className="ctaButton"><a href="https://magasinetfilter.se/reportage/59-minuter-som-forandrade-sverige/">BÖRJA LÄS</a></div>
                 <div className="ctaButton">BÖRJA LYSSNA</div>
               </div>
             </div>

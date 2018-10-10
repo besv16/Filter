@@ -130,6 +130,10 @@
   line-height: 23px;
 }
 
+.ctaButton a {
+  text-align: center;
+}
+
 .readlistenContainer div {
   width: 48%;
   height: 5.7vh;

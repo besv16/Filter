@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import SimpleSlider from '../SimpleSlider';
 import './index.css'
-class Related extends React.Component {
+class Related extends Component {
   render () {
     return (
       <div className="Related">

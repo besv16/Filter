@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './index.css';
 import Quiz from '../Quiz';
-class Discussion extends React.Component {
+class Discussion extends Component {
   render () {
     return (
       <div className="Discussion">
@@ -68,7 +67,7 @@ class Discussion extends React.Component {
 
         <h3>Diskussion på sociala medier</h3>
         <div className="twitterContainer">
-          <a className="twitter-timeline" data-width="613" data-height="550" data-theme="dark" data-link-color="#F5F8FA" href="https://twitter.com/magasinetfilter?ref_src=twsrc%5Etfw">Tweets by magasinetfilter</a>
+          <a className="twitter-timeline" data-width="613" data-height="550" data-theme="dark" data-link-color="#F5F8FA" href="https://twitter.com/Palmemordet?ref_src=twsrc%5Etfw">Tweets by Palmemordet</a>
         </div>
       </div>
       </div>

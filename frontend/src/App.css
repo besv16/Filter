@@ -46,6 +46,7 @@ h3 {
 
 .App a {
   text-decoration: none;
+  color: #fff;
 }
 
 .App-header {
@@ -64,32 +65,48 @@ h3 {
 }
 
 .likeShareContainer {
+  margin-bottom: 60px;
   width: 100%;
-  /* height: 464px; ANVÄND NÄR VI FÅTT IN HJÄRT-BILDEN */
-  height: 600px;
+  height: 570px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #fcfcf9;
 }
 
 .likeShareContainer img {
+  width: 170px;
   height: 418px;
+  transition: all 0.2s ease-in-out;
+}
+
+.likeShareContainer img:hover {
+  transform: scale(1.2);
 }
 
 .likeShare {
+  height: 415px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.likeTopBottom {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 p.bold {
   font-family: 'Akkurat Bold';
-  font-size: 15px;
+  font-size: 20px;
 }
 
 p.light {
   font-family: 'Akkurat Pro Regular';
-  font-size: 14px;
+  font-size: 19px;
 }

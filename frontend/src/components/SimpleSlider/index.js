@@ -3,8 +3,8 @@ import Slider from "react-slick";
 import palmemordplatsen from '../../images/palme-mordplatsen.jpg';
 import thomaspettersson from '../../images/thomas-pettersson.jpg';
 import polisensmisslyckande from '../../images/polisens-miss.png';
-
-import svdbl from '../../images/svdbl-logga.svg';
+import boxes from '../../images/fyrkanter.svg';
+import svdbl from '../../images/svdbl-logga.png';
 import filter from '../../images/filter-logga.png';
 import dn from '../../images/dn-logga.jpg';
 
@@ -26,28 +26,28 @@ export default class SimpleSlider extends Component {
     };
 
 
-    if (this.props.name == 'Articles') {
+    if (this.props.name === 'Articles') {
       return (
         <div className="containerPadding">
           <Slider {...settings}>
 
             <div className="slider0">
               <div className="articlesContainer">
-                <img src={palmemordplatsen}></img>
+                <img src={palmemordplatsen} alt="Mordplatsen och vittnesmål"></img>
                 <p>Mordplatsen & Vittnesmål</p>
               </div>
             </div>
 
             <div className="slider0">
               <div className="articlesContainer">
-                <img src={thomaspettersson}></img>
+                <img src={thomaspettersson} alt="Intervju med Thomas Pettersson"></img>
                 <p>Intervju med Thomas Pettersson</p>
                 </div>
             </div>
 
             <div className="slider0">
               <div className="articlesContainer">
-                <img src={polisensmisslyckande}></img>
+                <img src={polisensmisslyckande} alt="Polisens misslyckande"></img>
                 <p>Polisens misslyckande</p>
               </div>
             </div>
@@ -57,7 +57,7 @@ export default class SimpleSlider extends Component {
       );
     }
 
-    if (this.props.name == 'Infographic') {
+    if (this.props.name === 'Infographic') {
       return (
         <div className="containerPadding">
           <Slider {...settings}>
@@ -89,27 +89,12 @@ export default class SimpleSlider extends Component {
             </div>
             <div>
             <div className="slider1">
-            <h2>Preskriberingstid</h2>
+            <h2>Erkännande av mordet</h2>
             <div className="dataDescription">
-            <p>Efter tolv års efterforskningar om denna gåtfulla person fann journalisten Thomas Pettersson vad andra tidigare gått bet på.</p>
+            <p>Samtidigt uppgav spaningsledningen att sammanlagt 133 personer erkänt mordet på dåvarande stadsminister Palme genom åren.</p>
             </div>
             <div className="dataContainer">
-            <h3 className="dataHeading">Innan 2010</h3>
-            <div className="dataRow1">
-            <p>25 år</p>
-            </div>
-            </div>
-            <div className="dataContainer">
-            <h3 className="dataHeading">Efter 2010</h3>
-            <div className="dataRow2">
-            <p>40 år</p>
-            </div>
-            </div>
-            <div className="dataContainer">
-            <h3 className="dataHeading">Palmemordet</h3>
-            <div className="dataRow3">
-            <p>32 år</p>
-            </div>
+              <img src={boxes} alt="Erkännande av mordet"></img>
             </div>
             </div>
             </div>
@@ -120,14 +105,14 @@ export default class SimpleSlider extends Component {
 
 
 
-    if (this.props.name == 'Discussed') {
+    if (this.props.name === 'Discussed') {
       return (
         <div className="containerPadding">
           <Slider {...settings}>
             <div>
               <div className="slider2">
                 <div className="discussionContainer">
-                  <img src={svdbl}></img>
+                  <img src={svdbl} alt="Svenska dagbladet logotyp"></img>
                   <p>”Mattias Göransson säger att de haft ett unikt
                   kontaktnät till sitt förfogande och att det är
                   Filters historiskt största reportage med över
@@ -141,7 +126,7 @@ export default class SimpleSlider extends Component {
             <div>
               <div className="slider2">
                 <div className="discussionContainer">
-                  <img src={filter}></img>
+                  <img src={filter} alt="Filter logotyp"></img>
                   <p>”Mattias Göransson säger att de haft ett unikt
                   kontaktnät till sitt förfogande och att det är
                   Filters historiskt största reportage med över
@@ -155,7 +140,7 @@ export default class SimpleSlider extends Component {
             <div>
               <div className="slider2">
                 <div className="discussionContainer">
-                  <img src={dn}></img>
+                  <img src={dn} alt="DN logotyp"></img>
                   <p>”Mattias Göransson säger att de haft ett unikt
                   kontaktnät till sitt förfogande och att det är
                   Filters historiskt största reportage med över
@@ -173,28 +158,28 @@ export default class SimpleSlider extends Component {
     }
 
 
-    if (this.props.name == 'Related') {
+    if (this.props.name === 'Related') {
       return (
         <div className="containerPadding">
           <Slider {...settings}>
 
             <div className="slider0">
               <div className="articlesContainer">
-                <img src={palmemordplatsen}></img>
-                <p>Mordplatsen & vittnesmål</p>
+                <img src={palmemordplatsen} alt="Mordplatsen & Vittnesmål"></img>
+                <p>Mordplatsen & Vittnesmål</p>
               </div>
             </div>
 
             <div className="slider0">
               <div className="articlesContainer">
-                <img src={thomaspettersson}></img>
+                <img src={thomaspettersson} alt="Intervju med Thomas Pettersson"></img>
                 <p>Intervju med Thomas Pettersson</p>
                 </div>
             </div>
 
             <div className="slider0">
               <div className="articlesContainer">
-                <img src={polisensmisslyckande}></img>
+                <img src={polisensmisslyckande} alt="Polisens misslyckande"></img>
                 <p>Polisens misslyckande</p>
               </div>
             </div>

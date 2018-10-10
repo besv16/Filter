@@ -10,3 +10,7 @@
 .Related h1 {
   margin-bottom: 25px;
 }
+
+.Related .containerPadding .sliderContainer3 .slick-slide {
+    width: 310px !important;
+}
